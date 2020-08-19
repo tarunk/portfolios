@@ -2,7 +2,8 @@
 
 portfolio managements
 Here are some details:
-- To create bond: http://localhost:8080/api/bonds (post call)
+- /api/bonds
+To create bond: http://localhost:8080/api/bonds (post call)
 to change bond same put call
 {
 	"userId": "tarun",
@@ -34,7 +35,8 @@ in user table user should be "SELLER"
 }
 in user table buyer should be "CUSTOMER"
 
-- to delete bond : http://localhost:8080/api/bonds/silver200 (delete call)
+- /bonds/{bondName}
+to delete bond : http://localhost:8080/api/bonds/silver200 (delete call)
 here silver200 we want to delete
 {
 	"userId": "tarun",
@@ -47,11 +49,13 @@ here Arun is sellers
 
 - to see the Customer tonu portfolios: http://localhost:8080/bond/portfolios/customer/tonu
 
-- to admin can see the bond owned by customer: http://localhost:8080/api/customers/bond/gold24/tarun
+- /api/customers/bond/{bondName}/{admin}
+to admin can see the bond owned by customer: http://localhost:8080/api/customers/bond/gold24/tarun
 here tarun is 'ADMIN'
 gold24 is bond
 
-- to generate report: http://localhost:8080/api/report/monthly/tarun
+- /report/{frq}/{admin}
+to generate report: http://localhost:8080/api/report/monthly/tarun
 here tarun is ADMIN
 "monthly" is a frequency
 
