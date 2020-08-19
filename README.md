@@ -18,43 +18,44 @@ the user id is important, here tarun is "ADMIN" in user table, it can be created
 
 - seller request: http://localhost:8080/bond/seller/portfolios (post call)<br>
 {<br>
-	"seller": "arun",<br>
-	"bondName": "gold200",<br>
-	"count": 20,<br>
-	"sellPrice": 11.12<br>
+	***"seller": "arun",<br>
+	***"bondName": "gold200",<br>
+	***"count": 20,<br>
+	***"sellPrice": 11.12<br>
 }<br>
 
 in user table user should be "SELLER"<br>
 
 - buyer request to buy bond: http://localhost:8080/bond/buyer/portfolios<br>
-{
-	"buyer": "tonu",<br>
-	"bondName": "gold24",<br>
-	"count": 10,<br>
-	"sellPrice": 12.12<br>
-}
+{<br>
+	***"buyer": "tonu",<br>
+	***"bondName": "gold24",<br>
+	***"count": 10,<br>
+	***"sellPrice": 12.12<br>
+}<br>
 in user table buyer should be "CUSTOMER"<br>
 
 - /bonds/{bondName}<br>
 to delete bond : http://localhost:8080/api/bonds/silver200 (delete call)<br>
 here silver200 we want to delete<br>
 {<br>
-	"userId": "tarun",<br>
-	"bondName": "silver200"<br>
+	***"userId": "tarun",<br>
+	***"bondName": "silver200"<br>
 }<br>
 userid tarun need to be ADMIN<br>
 
 - to see the Sellers sales: http://localhost:8080/bond/sales/seller/arun<br>
 here Arun is sellers<br>
 
-- to see the Customer tonu portfolios: http://localhost:8080/bond/portfolios/customer/tonu<br>
+- /portfolios/customer/{customerName}<br>
+to see the Customer tonu portfolios: http://localhost:8080/bond/portfolios/customer/tonu<br>
 
 - /api/customers/bond/{bondName}/{admin}<br>
-to admin can see the bond owned by customer: http://localhost:8080/api/customers/bond/gold24/tarun<br>
+admin can see the bond owned by customer: http://localhost:8080/api/customers/bond/gold24/tarun<br>
 here tarun is 'ADMIN'<br>
 gold24 is bond<br>
 
-- /report/{frq}/{admin}<br>
+- /api/report/{frq}/{admin}<br>
 to generate report: http://localhost:8080/api/report/monthly/tarun<br>
 here tarun is ADMIN<br>
 "monthly" is a frequency<br>
