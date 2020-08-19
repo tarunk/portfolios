@@ -18,20 +18,20 @@ the user id is important, here tarun is "ADMIN" in user table, it can be created
 
 - seller request: http://localhost:8080/bond/seller/portfolios (post call)<br>
 {<br>
-	***"seller": "arun",<br>
-	***"bondName": "gold200",<br>
-	***"count": 20,<br>
-	***"sellPrice": 11.12<br>
+	"seller": "arun",<br>
+	"bondName": "gold200",<br>
+	"count": 20,<br>
+	"sellPrice": 11.12<br>
 }<br>
 
 in user table user should be "SELLER"<br>
 
 - buyer request to buy bond: http://localhost:8080/bond/buyer/portfolios<br>
 {<br>
-	***"buyer": "tonu",<br>
-	***"bondName": "gold24",<br>
-	***"count": 10,<br>
-	***"sellPrice": 12.12<br>
+	"buyer": "tonu",<br>
+	"bondName": "gold24",<br>
+	"count": 10,<br>
+	"sellPrice": 12.12<br>
 }<br>
 in user table buyer should be "CUSTOMER"<br>
 
@@ -39,8 +39,8 @@ in user table buyer should be "CUSTOMER"<br>
 to delete bond : http://localhost:8080/api/bonds/silver200 (delete call)<br>
 here silver200 we want to delete<br>
 {<br>
-	***"userId": "tarun",<br>
-	***"bondName": "silver200"<br>
+	"userId": "tarun",<br>
+	"bondName": "silver200"<br>
 }<br>
 userid tarun need to be ADMIN<br>
 
