@@ -55,10 +55,10 @@ gold24 is bond
 here tarun is ADMIN
 "monthly" is a frequency
 
-Important points:
--- all buying and selling requests are handled Async.
---  H2 in-memory database.
---  Code is written in Java-8 with spring boot
---  it is compiling and running perfectly.
---  tried to add MockMvc unit test case but I am facing some issues so, left with a few.
---  used IntelliJ IDE
+## Important points:
+-   all buying and selling requests are handled Async.
+-   H2 in-memory database.
+-   Code is written in Java-8 with spring boot
+-   it is compiling and running perfectly.
+-   tried to add MockMvc unit test case but I am facing some issues so, left with a few.
+-  used IntelliJ IDE
