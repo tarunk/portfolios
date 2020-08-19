@@ -1,7 +1,8 @@
 # portfolios
+
 portfolio managements
 Here are some details:
-1) to create bond: http://localhost:8080/api/bonds (post call)
+- To create bond: http://localhost:8080/api/bonds (post call)
 to change bond same put call
 {
 	"userId": "tarun",
@@ -14,7 +15,7 @@ to change bond same put call
 the user id is important, here tarun is "ADMIN" in user table, it can be created via SQL statements exist in resource dir
 
 
-2) seller request: http://localhost:8080/bond/seller/portfolios (post call)
+- seller request: http://localhost:8080/bond/seller/portfolios (post call)
 {
 	"seller": "arun",
 	"bondName": "gold200",
@@ -24,7 +25,7 @@ the user id is important, here tarun is "ADMIN" in user table, it can be created
 
 in user table user should be "SELLER"
 
-4) buyer request to buy bond: http://localhost:8080/bond/buyer/portfolios
+- buyer request to buy bond: http://localhost:8080/bond/buyer/portfolios
 {
 	"buyer": "tonu",
 	"bondName": "gold24",
@@ -33,7 +34,7 @@ in user table user should be "SELLER"
 }
 in user table buyer should be "CUSTOMER"
 
-5) to delete bond : http://localhost:8080/api/bonds/silver200 (delete call)
+- to delete bond : http://localhost:8080/api/bonds/silver200 (delete call)
 here silver200 we want to delete
 {
 	"userId": "tarun",
@@ -41,16 +42,16 @@ here silver200 we want to delete
 }
 userid tarun need to be ADMIN
 
-6) to see the Sellers sales: http://localhost:8080/bond/sales/seller/arun
+- to see the Sellers sales: http://localhost:8080/bond/sales/seller/arun
 here Arun is sellers
 
-7) to see the Customer tonu portfolios: http://localhost:8080/bond/portfolios/customer/tonu
+- to see the Customer tonu portfolios: http://localhost:8080/bond/portfolios/customer/tonu
 
-8) to admin can see the bond owned by customer: http://localhost:8080/api/customers/bond/gold24/tarun
+- to admin can see the bond owned by customer: http://localhost:8080/api/customers/bond/gold24/tarun
 here tarun is 'ADMIN'
 gold24 is bond
 
-9) to generate report: http://localhost:8080/api/report/monthly/tarun
+- to generate report: http://localhost:8080/api/report/monthly/tarun
 here tarun is ADMIN
 "monthly" is a frequency
 
